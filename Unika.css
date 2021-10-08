@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+
+}
+.header{
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 75px;
+}
+.navbar{
+    padding: 10px;
+    height: 55px;
+}
+.logo{
+    font-size: 50px;
+    color:darkgray;
+    float: left;
+    padding-left: 5%;
+}
+.menu{
+    float: right;
+    padding: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color:#fff;
+    padding: 20px;
+    font-size: 16px;
+}
+.menu a:hover{
+    color: crimson;
+}
+.main{
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 875px;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 550px;
+    margin: 15% 0;
+    padding: 7% 0;
+}    
+
+.content h1 {
+    font: bolder;
+    color: #fff;
+    font-size: 5em;
+}
+
+.content p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em
+}
+
+.main-button{
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 4% 0;
+}
+.main-button button{
+    font-size: 0.9em;
+    padding: 1%;
+    width: 12%;
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    border: 2px solid;
+}
+
