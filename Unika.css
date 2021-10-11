@@ -6,7 +6,6 @@
     margin: 0 auto;
     width: 80%;
     position: relative;
-
 }
 .header{
     background-color: rgb(51, 51, 51);
@@ -34,39 +33,33 @@
     font-size: 16px;
 }
 .menu a:hover{
-    color: crimson;
+    color: rgb(248, 78, 112);
+    transition: 1s;
 }
 .main{
     background-image: url(img/img1.jpg);
     background-size: cover;
     width: 100%;
     height: 875px;
+    position:  relative;
 }
 .content{
     position: absolute;
     width: 100%;
     text-align: center;
-    height: 550px;
-    margin: 15% 0;
-    padding: 7% 0;
+    top: 300px;
 }    
-
 .content h1 {
     font: bolder;
     color: #fff;
     font-size: 5em;
 }
-
 .content p{
     text-align: center;
     color: #fff;
     font-size: 1.5em
 }
-
 .main-button{
-    align-items: center;
-    width: 100%;
-    height: 100px;
     margin: 4% 0;
 }
 .main-button button{
@@ -77,5 +70,63 @@
     color: #fff;
     border-color: #fff;
     border: 2px solid;
+}
+.main-button button:hover{
+    color: #fff;
+    background-color:rgb(255, 65, 103);
+    border-color: crimson;
+    transition: 1s;
+}
+.about-heading{
+    width: 100%;
+    margin: 3% 0%;
+    height: 50px;
+}
+.about-heading h1{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.about-heading hr{
+    width: 40%;
+    margin: 0 auto;
+}
+.about-heading p{
+    text-align: center;
+    padding: 0.5%;
+}
+.row{
+    margin-top: 10%;
+}
+.row ul{
+    width: 100%;
+}
+.row li{
+    width: 20%;
+    display: inline-block;
+    padding: 2%;
+}
+.skill-heading{
+    text-align: center;
+    font-weight: bold;
+    padding: 1%;
+}
+.skill-heading hr{
+    width: 40%;
+    margin: 0 auto;
+}
+.skill-per{
+    background-color:#fff;
+    border: 3px solid; 
+    border-color: rgb(77, 77, 77);
+    width: 100;
+    height: 20px;
+}
+.skill-row{
+    width: 100%;
+}
+.skill-q{
+    display: inline-block;
+    width: 20%;
 }
 
