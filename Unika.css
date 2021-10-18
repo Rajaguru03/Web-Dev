@@ -81,22 +81,24 @@
     width: 100%;
     margin: 3% 0%;
     height: 50px;
+    position: relative;
 }
 .about-heading h1{
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
-.about-heading hr{
-    width: 40%;
-    margin: 0 auto;
+.about-heading img{
+    position: absolute;
+    left: 628px;
+    top: 47px;
 }
 .about-heading p{
     text-align: center;
     padding: 0.5%;
 }
 .row{
-    margin-top: 10%;
+    margin-top: 6%;
 }
 .row ul{
     width: 100%;
@@ -106,15 +108,15 @@
     display: inline-block;
     padding: 2%;
 }
+.skill{
+    margin-top: 40px;
+}
 .skill-heading{
     text-align: center;
     font-weight: bold;
     padding: 1%;
 }
-.skill-heading hr{
-    width: 40%;
-    margin: 0 auto;
-}
+
 .skill-per{
     background-color:#fff;
     border: 3px solid; 
@@ -123,10 +125,181 @@
     height: 20px;
 }
 .skill-row{
+    margin-top: 5%;
     width: 100%;
 }
 .skill-q{
     display: inline-block;
-    width: 20%;
+    width: 40%;
+    padding-left: 6%;
+}
+.pdf{
+    position: relative;
+    background-color: azure;
+    width: 100%;
+    height: 200px;
+    margin-top: 85px;
+}
+.pdf-section{
+    padding: 2%;
+    position: relative;
+    top: 33px;
+}
+.pdf-section h1 p{
+    float: left;
+}
+.pdf-section p{
+    width: 83%;
+}
+.pdf-section button{
+    width: 182px;
+    font-weight: bolder;
+    padding: 13px;
+    font-size: 1em;
+    border: 1px solid #000;
+    background-color:rgb(59, 59, 59);
+    float: right;
+    position: relative;
+    bottom: 57px;
+    right: 12px;
+    color: #fff;
+}
+.service{
+    margin-top: 2%;
+    position: relative;
+    height: 540px;
 }
 
+.service-heading{
+    text-align: center;
+}
+.service-heading h1{
+    margin-bottom: 1%;
+}
+.service-content{
+    display: flex;
+    margin-top: 5%;
+}
+.contents{
+    padding: 1%;
+}
+.service-icon{
+    background-color: #fff;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(45deg);
+    border: 2px solid rgb(27, 27, 27);
+}
+.icon-inner{
+    background-color: rgb(27, 27, 27);
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.service-icon:hover{
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.service-text{
+    text-align: center;
+    margin-top: 25px;
+}
+.service-text h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.service-button{
+    position: relative;
+}
+.service-button button{
+    position: absolute;
+    left: 633px;
+    top: 60px;
+    width: 270px;
+    height: 42px;
+    font-size: 1.2em;
+    background-color: rgb(27, 27, 27);
+    color: #fff;
+    border: 0 solid;
+}
+.service-button button:hover{
+    background-color: rgb(90, 89, 89);
+    transition: 1.5s;
+}
+.review{
+    background-image:linear-gradient(rgba(2, 13, 48, 0.7),rgba(0, 0, 0, 0.795)), url(img/testimonial-bg.jpg);
+    height:450px;
+    background-size:cover ;
+}
+.review-section{
+    position: relative;
+    padding-top:60px;
+    margin: 0% auto;
+}
+.review-heading{
+    text-align: center;
+    color: #fff;
+}
+.review-heading h1{
+    margin-bottom: 10px;
+}
+.review-heading p{
+    margin-top: 10px;
+}
+.review-content {
+    color: #fff;
+    text-align: center;
+    margin: 116px;
+}
+.work{
+    margin-top: 45px;
+}
+.work-section{
+    position: relative;
+}
+.work-heading{
+    text-align: center;
+}
+.work-main{
+    margin-top: 110px;
+    margin-left: 10px;
+}
+.work-header ul li{
+    display: inline-block;
+    padding-left: 40px;
+    margin: 0% auto;
+}
+.work-header ul{
+    margin-left:286px;
+}
+.work-header a{
+    text-decoration: none;
+    color: #000; 
+}
+.work-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 55px 160px;
+}
+.img-row img{
+    width: 350px;
+    height: 365px;
+    padding: 20px 20px;
+}
+.funfact{
+    background-image: linear-gradient(rgba(11, 24, 24, 0.884),rgba(15, 18, 20, 0.692)),url(img/counter-bg.jpg);
+    width: 100%;
+    height: 400px;
+}
+.funfact-section{
+    padding-top: 45px;
+}
+.funfact-heading{
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+}
