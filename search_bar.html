@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search bar</title>
+    <style>
+            *{
+        margin: 0;
+        padding: 0;
+            }
+            .bg{
+                background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ8NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ0NDysZFRkrKysrKys3Ky03LSsrKystNysrKystKzctKzcrLTc3KzcrNy0rKy0rKysrNzIrNys3Lf/AABEIAKgBLAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgEEAAYF/8QAKBABAQEAAgECBAcBAQAAAAAAAAECERIDwfBBUYGRITFhcZKh0bFC/8QAGwEBAQEBAQEBAQAAAAAAAAAAAwIBBAAGBQf/xAAZEQEBAQEBAQAAAAAAAAAAAAAAAQIREgP/2gAMAwEAAhEDEQA/AP1qmrqa+rfA5FU1ek2KdGR1NJYy5afMFU0tym5V0+YGxNhrlFjelkDYmw1iLFSrkDYmwtibFSqGyxdjOFSvIYuxnC5WJa3h7hUrHo2PSKkax6LkZIuRla3MJmJkJmItVFZhcROYXMFaWKzDZiMQuYLVLCZhsxGYXMDqmyTENgeYbEDqmyXDp8bnxHT44DRsujBR4LPf5uelj4vhnVbeH6np/P8AMBcs6nsRY2adWIHhnBurOreunOQ3Kbk9ym5V0+cguUXLouUXLelmXPcouXRcouW9X5c9yiw9iNRU09wNibC2JsVNJsFY9wuxnC5pKeHuG8N4VNMrOFSPcKkV1j0i5HpF5j3Xo3MJmMzC5iLVxuYXMZmFzBWljcw2YzOS5grS5VmFzGZyXOQ6psqzC5jMwuYK02VYjo8cFiOjxwOqfJvHC/b+0YhZ9fo59Uj4vMX1bmKkfoXT4TGRdWdTWM4e9OvGQ9Xuper3CvTqxkPVlya5Zcq9OjOQXI7l0XKNRvSTLnuR6josHqN6ry59Qdh9QeorqbA6iLC6iLFSosHYmrqVSjrGvPLlTWyKkZFRfUqkJmJhMx7rYrMLmIzDYiLVxWYbOU4hsQVpIrENjKcQ2ci1SZbnJs5ZnJc5Dqny3OS5jMwmYK0+VYh8QeYbxwOqfJcT3+hZz8Pr+6MT/nq6MetDqkfFSLjIqO218VjLOGWLZw9NOzGU8PcK4e4V6deMosZYvhljfTozkVg7DWI1FdJMg1B6h9QWoqV65BqD1DaFpUqLA6g9G0LSpRWDqauoqpRVj0eeXKOqi4iLi5UkyTI8ly3rYTMNmDwbERVwuIbEHg+ILVXCYhsRGIbEDqri8wuYnMLmBtPmqzCZicwmRWujKsw2IjJcD1XRkuPfoTj9UYhPt9Q0r42NjI87LXyGIp5nLzOuz55Ux55XXZjLyapNb10Zymo0uo0qVfBaFo2haVK9YHQtF0LS4LUFoWi6FpcDqIqKrSKqA1HnmPLgqqLyOLySJNk2QZNlrx8GwDB8IqofB8AwfAtEh8HyDB8g0uFyXIslyKmyTJMjyTIq6cFwXAsGwPToyXC/f5pyv38Q0r4nlSOXuXXXyuIvlsqOXuWOz5wnLOUyt5a68RrLWcstU6Mx6o1XrU2tXxOqLVXqi1VxlHqi1V6otUkFpGqLVVqj1Vxz6Tqjtbai1cBpvL3KeXpSQdJF5FKTNXEGybLnzTZrXnRinw5sU+KmxUdOKfDmxT4otRcdOKfFcuKfFDqLjozS5rnzS5obDZPkmQZpc6FY6MHwfDmxXRgWnTk2VjlXyKkfDdm8oe5dVfMYXK92Hy9yx14N2e7C5e7NdeCdmWo7JulQ+au6Ram6RdLkX1utC1XtaFrS5E2s1oWq3Wg60SQeq9qi1XtaHrRJAaetRay6TyuRz6Vy2UfL3JJB00q80Mq81ciXRmlxXNmlzW8bHVimxXLmmxU2KkdeKbGnJjR86HqLkdeNGxpyY0bOg6hJHXnRc6cmdGzoNhcx050XFcudGxRWOjLrxXRhyeOunFBqOjLozVe/iPNVz+39hsW+F5ZdM59U2uqvmMq7Pdh2s7PcdWKXs92F2ZdNkdOaXsm6FdJulyGlLdDukXY9bJIv0TWha0nWh62uRN0rWg60zWha0WZHa3Wh60zWh3RJkOqq6Tyi6Z2JMhq+W9hdmykmUU00vNBNLmlTLHTmkzpzZ0XOm+Wx1Z0XOnLnRc6TcrkdeNGzpyZ0bGh6yuR150bGnHjRsaDqEkdmdFzpyY0bOhahsx1Z0fGnJjR8UGobLt8ddWK4vFp0+O+n3rn3HRl1Zvv381zn5z6/EOdet9Ivpz8fy/AFinwtRqtRp2WPmcvdk2sqLWcPmqumXSLUXSpDZpLpN0O6RdEkLNEu0XSLoetEmVel62PW0a0PWizLLpWtD1pOtD1okyO6VrQ7pN0i6NMjtXdM5HdM7EmUWl7NlFy2Ukyg0q80Eq5W+XnRnRM6c+dEzp7yqOnOi505c6LnSbFx150XOnLnRc6FYSOvGjZ05MaNjQtQkdedGxpyYpsUGobLrxo+NOTGj+Oh1DZd3irq8evvOPvHD4q6/FXNuHy65/s9YueXj4fn+IcX37+ROb+n1c9inxCNrRt2cfMZHqj1V6Fp7hZU2oum6o9VchJXrpF0y0dpJFyquh60zWh2lzFdbrQ9aZqotLMstbdD1plqLTZyi1t0i1lqbTZyi1trOU2p5JMp6TlUouWyrmWGlXKCVcrfLx80maDNJmssXHRmlzXPmlzUWLjozTZrmzTZotQkdOKbFc2KbFDqEjpxT4rmzTYoNQ2XTiujFcuK6MA1C5dnirr8dcPjrr8Vc24fLszVy/t9uQ4pJff4uexb5CY5+OfvInfj/XP8o8866+YgdeO/PP8AKB14r88/zjzz0JB3xX54+H/uC14788fzz/rHlyEgdD1XnixQ7R6rzxstHqj1WvGzGUdqLXnjZTU2oteeLmIrGPPFjHmx55TFxUeeeavNJmvPMqoXNLmvPDq4bFNivPC0SGxTZeeBomXRg2Hng6Nk+D4eec+i5dPjrr8Veec+z5dOKR55zUj/2Q==");
+                background-size: cover;
+                height: 1000px;
+            }
+            .container{
+                text-align: center;
+                position: relative;    
+                width: 100%;
+            }
+            .container h1{
+                padding: 20px;
+            }
+            #search{
+                background-image: url('search_icon.png');
+                background-repeat: no-repeat;
+                width: 63.1%;
+                font-size: 16px;
+                padding: 12px 25px 12px 40px;
+                border: 1px solid #ddd;
+                margin-bottom: 5px;
+            }
+            .options li{
+                opacity: 0.7;
+                width: 70%;
+                list-style-type: none;
+                margin: 0 auto;
+                padding: 1px;
+                /* display: none; */
+            }
+            .ul li a{
+                margin: 0% auto;
+                width: 95%;
+                list-style-type: none;
+                border: 1px solid #ddd;
+                background-color: #f6f6f6;
+                padding: 12px;
+                font-size: 18px;
+                color: black;
+                display: block;
+                text-decoration: none;
+                text-align: start;
+            }
+
+            .options li a:hover:not(.header){
+                background-color: rgb(238, 227, 227);
+            }
+
+            .options li:hover{
+                display: block;
+            }
+</style>
+    
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="search-bar">
+                <h1>Search bar</h1>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="options">
+                    <input id="search" type="text" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+                    <ul id="myUL" class="ul">
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Alan">Alan</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Arul">Arul</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Arul">Amul</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Beten">Beten</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Bravo">Bravo</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="ShinChan">ShinChan</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Ferb">Ferb</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Dora">Dora</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Jackey">Jackey</a></li>
+                        <li><a href="#"><input type="checkbox" onclick="pt()" name="select" value="Virat">Virat</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+<script>
+            function search(){
+            var input, filter ,ul,li,a,i,txtValue;
+            input=document.getElementById("search");
+            filter=input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i=0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1){
+                    li[i].style.display="";
+                }else{
+                    li[i].style.display="none";
+                }
+            }
+        }
+
+            function pt(){
+                var search_box=document.getElementsByName("select");
+                var option_box='';
+                for(i=0;i<10;i++)
+                {
+                    if(search_box[i].checked === true)
+                    {
+                        option_box +=search_box[i].value +" ";
+                    }
+                }   
+                document.getElementById("search").value = option_box;
+            }
+</script>
+</body>
+</html>
